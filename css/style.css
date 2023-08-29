@@ -164,10 +164,10 @@ address {
     padding: 16px 32px;
 }
 
-
 .content-list {
-    display: flex;
-    column-gap: 24px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 24px
 }
 
 .section1-text {
@@ -207,15 +207,10 @@ address {
     text-align: center;
 }
 
-
-.images-container {
-    display: flex;
-    flex-direction: column;
-}
-
 .what-are-we-doing-lists {
-    display: flex;
-    column-gap: 24px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 24px
 }
 
 
@@ -234,6 +229,7 @@ address {
     border-radius: 0px 0px 4px 4px;
     background-color: var(--color-white);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    width: 264px;
 }
 
 .our-team {
@@ -241,8 +237,14 @@ address {
 }
 
 .our-team-lists {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     column-gap: 24px;
+
+}
+
+.text-content {
+    padding: 32px 16px;
 }
 
 .img {
@@ -255,7 +257,6 @@ address {
     height: 260px;
     object-fit: cover;
     mix-blend-mode: normal;
-    margin-bottom: 30px;
 }
 
 .team-name {
@@ -276,7 +277,6 @@ address {
     line-height: 1.5em;
     color: var(--color-slate);
     text-align: center;
-    margin-bottom: 32px;
 }
 
 
@@ -312,7 +312,6 @@ address {
     display: flex;
     flex-direction: column;
 }
-
 
 .studio-white {
     color: var(--color-cloud);
@@ -357,11 +356,12 @@ address {
 
 
 .filters {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    column-gap: 24px;
     align-items: center;
     justify-content: center;
     margin-bottom: 72px;
-    column-gap: 24px;
 }
 
 
@@ -382,8 +382,8 @@ address {
 
 .project-card-rows {
     width: 1128px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto auto;
     gap: 48px 24px;
 }
 
@@ -399,12 +399,11 @@ address {
     height: 300px;
     object-fit: cover;
     mix-blend-mode: normal;
-    margin-bottom: 32px;
 }
 
 .card-content {
     width: 360px;
-    padding: 0 16px;
+    padding: 32px 16px;
 }
 
 .img-label {
@@ -425,5 +424,4 @@ address {
     font-size: 16px;
     font-family: Roboto;
     color: var(--color-slate);
-    margin-bottom: 32px;
 }
