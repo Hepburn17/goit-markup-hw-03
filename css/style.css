@@ -213,6 +213,9 @@ address {
     column-gap: 24px
 }
 
+.what-are-we-doing {
+    padding-top:0px;
+}
 
 .header3 {
     font-family: Roboto;
